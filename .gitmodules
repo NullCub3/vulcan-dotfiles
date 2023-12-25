@@ -1,0 +1,3 @@
+[submodule "obsidian"]
+	path = obsidian
+	url = https://git.nullcube.net/nullcube/obsidian-config
