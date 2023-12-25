@@ -1,0 +1,8 @@
+#!/bin/sh
+
+export MOZ_ENABLE_WAYLAND=1
+export GTK_THEME=Catppuccin-Macchiato-Standard-Lavender-Dark
+#export QT_QPA_PLATFORMTHEME=qt5ct
+
+export DESKTOP_SESSION=plasma
+exec startplasma-wayland

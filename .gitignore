@@ -1,0 +1,13 @@
+# Caches
+**/Cache
+**/Code\ Cache
+syncthing/index-*
+
+# Obsidian
+obsidian/IndexedDB/
+obsidian/Dictionaries/
+obsidian/.org.chromium.md_0.indexeddb.*
+
+**/Local\ Storage
+**/.directory
+**/.DS_STORE
