@@ -7,8 +7,15 @@ sysmodmap=/etc/X11/xinit/.Xmodmap
 
 [[ -f $HOME/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources &
 
-# picom &
-#picom -b --unredir-if-possible --backend xr_glx_hybrid --vsync --use-damage --glx-no-stencil &
-
 export DESKTOP_SESSION=plasma
+
+# Vain attempts copied from the internet
+# to get KWin to render at a higher framerate than 60.
+__GL_SYNC_DISPLAY_DEVICE=DP-0
+__GL_GSYNC_ALLOWED=0
+KWIN_X11_REFRESH_RATE=288000
+KWIN_X11_NO_SYNC_TO_VBLANK=1
+KWIN_X11_FORCE_SOFTWARE_VSYNC=1
+
+nvidia-settings -l &
 exec startplasma-x11
