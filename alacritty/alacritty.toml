@@ -1,0 +1,11 @@
+import = ["~/.config/alacritty/catppuccin-macchiato.toml"]
+
+[env]
+TERM = "xterm-256color"
+
+[shell]
+program = "/bin/fish"
+
+[window.dimensions]
+columns = 120
+lines = 40

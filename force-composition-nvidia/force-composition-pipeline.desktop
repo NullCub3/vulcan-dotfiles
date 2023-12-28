@@ -1,5 +1,5 @@
 [Desktop Entry]
-Exec=/home/nullcube/.bin/force-composition-pipeline.sh
+Exec=/home/nullcube/.scripts/force-composition-pipeline.sh
 Icon=dialog-scripts
 Name=force-composition-pipeline
 Path=
