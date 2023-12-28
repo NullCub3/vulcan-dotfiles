@@ -3,6 +3,11 @@ import = ["~/.config/alacritty/catppuccin-macchiato.toml"]
 [env]
 TERM = "xterm-256color"
 
+[font]
+normal = { family = "JetBrainsMono NF", style = "Regular" }
+#normal = { family = "MonaSpiceAr NF", style = "Regular" }
+#normal = { family = "MonaSpiceKr NF", style = "Regular" }
+
 [shell]
 program = "/bin/fish"
 
