@@ -1,0 +1,11 @@
+[Trigger]
+Operation=Upgrade
+Type=Package
+Target=discord
+
+[Action]
+Description=Uninstall OpenAsar before updating Discord
+Depends=vencord-installer-cli
+When=PreTransaction
+NeedsTargets
+Exec=/usr/bin/vencordinstallercli --uninstall-openasar --branch auto

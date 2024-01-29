@@ -1,0 +1,12 @@
+[Trigger]
+Operation=Install
+Operation=Upgrade
+Type=Package
+Target=discord
+
+[Action]
+Description=Patch Discord with Vencord and OpenAsar
+Depends=vencord-installer-cli
+When=PostTransaction
+NeedsTargets
+Exec=/bin/sh -c '/usr/bin/vencordinstallercli --install --branch auto && /usr/bin/vencordinstallercli --install-openasar --branch auto'
