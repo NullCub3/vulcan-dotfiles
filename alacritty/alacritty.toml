@@ -10,6 +10,8 @@ normal = { family = "JetBrainsMono NF", style = "Regular" }
 
 [shell]
 program = "/bin/fish"
+#program = "/bin/tmux"
+#args = ["new-session", "-A"]
 
 [window.dimensions]
 columns = 120
