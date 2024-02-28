@@ -24,7 +24,6 @@ if status is-interactive
             command sudo $argv
         end
     end
-
 end
 
 # Allow for creation of nested directories in a single command
@@ -70,3 +69,4 @@ alias ':q' exit
 
 # Git Log but better
 alias githist "git log --graph --decorate --oneline"
+fish_add_path /home/nullcube/.cargo/bin/
