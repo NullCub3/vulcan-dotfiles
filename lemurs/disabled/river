@@ -1,7 +1,0 @@
-#!/bin/sh
-export MOZ_ENABLE_WAYLAND=1
-export GTK_THEME=Catppuccin-Macchiato-Standard-Lavender-Dark
-export QT_QPA_PLATFORMTHEME=qt5ct
-export WLR_NO_HARDWARE_CURSORS=1
-exec river
-

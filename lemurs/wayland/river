@@ -1,0 +1,24 @@
+#!/bin/sh
+
+# Firefox Wayland Mode
+export MOZ_ENABLE_WAYLAND=1
+
+# Theming
+export GTK_THEME=Catppuccin-Macchiato-Standard-Lavender-Dark
+export QT_QPA_PLATFORMTHEME=qt5ct
+
+# Other Options
+export WLR_NO_HARDWARE_CURSORS=1
+export _JAVA_AWT_WM_NONREPARENTING=1
+export SDL_VIDEODRIVER=wayland
+export QT_QPA_PLATFORM=wayland
+export XDG_SESSION_DESKTOP=river
+export XDG_CURRENT_DESKTOP=river
+
+# Block Nvidia Modules
+#export __EGL_VENDOR_LIBRARY_FILENAMES=/usr/share/glvnd/egl_vendor.d/50_mesa.json
+#modprobe -r nvidia nvidia_modeset nvidia_drm nvidia_urm
+#modprobe nouveau
+#nouveau-reclocking --max
+
+dbus-run-session river

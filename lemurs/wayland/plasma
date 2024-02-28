@@ -4,5 +4,14 @@ export MOZ_ENABLE_WAYLAND=1
 export GTK_THEME=Catppuccin-Macchiato-Standard-Lavender-Dark
 #export QT_QPA_PLATFORMTHEME=qt5ct
 
-export DESKTOP_SESSION=plasma
-exec startplasma-wayland
+# Other Options
+export _JAVA_AWT_WM_NONREPARENTING=1
+export SDL_VIDEODRIVER="wayland,x11"
+export QT_QPA_PLATFORM=wayland
+export XDG_SESSION_DESKTOP=plasma
+export XDG_CURRENT_DESKTOP=plasma
+
+#export ELECTRON_OZONE_PLATFORM_HINT=auto
+
+#export DESKTOP_SESSION=plasma
+startplasma-wayland
