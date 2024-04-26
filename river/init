@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+# See the river(1), riverctl(1), and rivertile(1) man pages for complete
+# documentation.
+
+# *** Source Scripts ***
+source ~/.config/river/theme.sh
+source ~/.config/river/hotkeys.sh
+source ~/.config/river/exec.sh
+source ~/.config/river/rules.sh
+source ~/.config/river/inputs.sh
+
+# *** Misc. ***
+
+# Set the default layout generator to be rivertile and start it.
+# River will send the process group of the init executable SIGTERM on exit.
+riverctl default-layout rivertile
+rivertile -view-padding 6 -outer-padding 6 &
