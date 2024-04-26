@@ -91,7 +91,6 @@ window#waybar.hidden {
   border-radius: 4px;
   background-color: #24273a;
   color: #cad3f5;
-  /* font-size: 14px; */
 }
 
 #window.focused {

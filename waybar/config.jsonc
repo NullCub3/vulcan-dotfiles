@@ -20,6 +20,9 @@
     "clock",
     "custom/power"
   ],
+  "river/window": {
+    "max-length": 100
+  },
   "keyboard-state": {
     "format": {
       "capslock": "{icon}"
