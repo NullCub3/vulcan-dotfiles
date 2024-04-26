@@ -58,7 +58,7 @@
     "max-length": 10
   },
   "cpu": {
-    "format": "  {usage}%",
+    "format": "  {usage}%"
   },
   "tray": {
     "spacing": 10
@@ -86,19 +86,23 @@
     "on-click": "~/.config/rofi/wifi/wifi.sh &",
     "on-click-right": "~/.config/rofi/wifi/wifinew.sh &",
     "interval": 5,
-    "nospacing": 1,
+    "nospacing": 1
   },
   "pulseaudio": {
-    "format": "{icon}",
+    "format": "{icon} ({volume}%)",
     "format-bluetooth": "󰂰",
     "nospacing": 1,
     "tooltip-format": "Volume : {volume}%",
-    "format-muted": "󰝟",
+    "format-muted": " ",
     "format-icons": {
-      "headphone": "",
+      "headphone": " ",
       "default": [
-        "󰖀",
-        "󰕾",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
         ""
       ]
     },
