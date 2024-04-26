@@ -11,6 +11,7 @@
     "river/window"
   ],
   "modules-right": [
+    "keyboard-state",
     "tray",
     "cpu",
     "memory",
@@ -19,6 +20,17 @@
     "clock",
     "custom/power"
   ],
+  "keyboard-state": {
+    "format": {
+      "capslock": "{icon}"
+    },
+    "format-icons": {
+      "locked": "󰪛",
+      "unlocked": " "
+    },
+    "device-path": "/dev/input/event17",
+    "capslock": true
+  },
   "wlr/taskbar": {
     "format": "{icon}",
     "on-click": "activate",
@@ -90,7 +102,7 @@
   },
   "pulseaudio": {
     "format": "{icon} ({volume}%)",
-    "format-bluetooth": "󰂰",
+    "format-bluetooth": "󰂰 ({volume}%)",
     "nospacing": 1,
     "tooltip-format": "Volume : {volume}%",
     "format-muted": " ",

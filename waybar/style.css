@@ -100,6 +100,7 @@ window#waybar.hidden {
   color: #24273a;
 }
 
+#keyboard-state label.locked,
 #cpu,
 #memory,
 #custom-power,
@@ -115,6 +116,12 @@ window#waybar.hidden {
   padding: 6px 12px;
   background-color: #1e1e2e;
   color: #181825;
+}
+
+#keyboard-state label.locked {
+  background-color: #cad3f5;
+  padding-right: 14px;
+  font-weight: bold;
 }
 
 #custom-power {
@@ -185,8 +192,6 @@ window#waybar.hidden {
   font-family: JetBrainsMono Nerd Font;
   background-color: #cba6f7;
 }
-
-
 
 tooltip {
   border-radius: 8px;
