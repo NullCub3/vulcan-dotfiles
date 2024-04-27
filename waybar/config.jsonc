@@ -31,7 +31,7 @@
       "locked": "󰪛",
       "unlocked": " "
     },
-    "device-path": "/dev/input/event17",
+    "device-path": "/dev/input/by-id/usb-Keychron_Keychron_K6-event-kbd",
     "capslock": true
   },
   "wlr/taskbar": {
@@ -122,6 +122,7 @@
       ]
     },
     "on-click": "pamixer -t",
+    "on-click-right": "pavucontrol -t 3 &",
     "scroll-step": 1
   },
   "custom/logo": {
